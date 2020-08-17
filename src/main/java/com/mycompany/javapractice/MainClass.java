@@ -12,6 +12,6 @@ package com.mycompany.javapractice;
 public class MainClass {
     public static void main(String args[]) {
         //PracticeCode1.SolutionTest();
-        PracticeCode2.SolutionTest();
+        PracticeCode4.SolutionTest();
      }
 }
