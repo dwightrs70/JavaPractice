@@ -5,6 +5,7 @@
  */
 package com.mycompany.javapractice;
 
+import java.io.Console;
 import java.util.Scanner;
 
 /**
@@ -13,7 +14,29 @@ import java.util.Scanner;
  */
 public class PracticeCode5 {
     static void Solution() {
-        ReverseStringWithRecursion();
+        
+    }
+    
+    static void InputPasswordFromConsole() {
+        Console cons;
+        
+        cons = System.console();
+        
+        if (cons != null) {
+            char[] pass_word = null;
+            
+            try {
+                pass_word = cons.readPassword("Input your password: ");
+                System.out.println("Your password was: "  + new String(pass_word));
+            }
+            finally {
+                if (pass_word != null) {
+                    java.util.Arrays.fill(pass_word, ' ');
+                }
+            }
+        }
+        else
+            throw new RuntimeException("Console isn't available.");
     }
     
     static void ReverseStringWithLoop() {
