@@ -13,5 +13,6 @@ public class MainClass {
     public static void main(String args[]) {
         //PracticeCode1.SolutionTest();
         PracticeCode5.Solution();
+        
      }
 }
